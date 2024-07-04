@@ -2,7 +2,7 @@ import cv2
 from pytesseract import pytesseract
 import numpy as np
 
-image = cv2.imread("image.png")
+image = cv2.imread("samples/sample1.png")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 
